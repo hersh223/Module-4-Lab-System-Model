@@ -6,7 +6,7 @@ Burger::Burger(string itemName, double price, string pattyType)
     this->pattyType = pattyType;
 }
 
-void Burger::displayItem() const
+void Burger::displayItem() const // Displays burger information.
 {
     cout << "Burger: "
          << itemName

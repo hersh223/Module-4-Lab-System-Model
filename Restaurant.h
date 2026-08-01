@@ -6,11 +6,12 @@
 
 using namespace std;
 
+// Represents the restaurant
 class Restaurant
 {
 private:
-    vector<Customer> customers;
-    vector<Order*> orders;
+    vector<Customer> customers; // Stores all customers
+    vector<Order*> orders; // Stores all orders
 
 public:
     Restaurant();

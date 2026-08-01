@@ -4,7 +4,7 @@ Restaurant::Restaurant()
 {
 }
 
-Restaurant::~Restaurant()
+Restaurant::~Restaurant() // Frees memory used by orders
 {
     for (Order* order : orders)
     {
@@ -12,17 +12,17 @@ Restaurant::~Restaurant()
     }
 }
 
-void Restaurant::addCustomer(const Customer& customer)
+void Restaurant::addCustomer(const Customer& customer) // Adds a customer to the restaurant
 {
     customers.push_back(customer);
 }
 
-void Restaurant::addOrder(Order* order)
+void Restaurant::addOrder(Order* order) // Adds an order to the restaurant
 {
     orders.push_back(order);
 }
 
-void Restaurant::displayCustomers() const
+void Restaurant::displayCustomers() const // Displays every customer
 {
     cout << "\n===== Customers =====\n";
 
@@ -32,7 +32,7 @@ void Restaurant::displayCustomers() const
     }
 }
 
-void Restaurant::displayOrders() const
+void Restaurant::displayOrders() const // Displays every order
 {
     cout << "\n===== Orders =====\n";
 

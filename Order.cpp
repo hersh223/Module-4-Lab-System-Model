@@ -4,7 +4,7 @@ Order::Order()
 {
 }
 
-Order::~Order()
+Order::~Order() // Frees memory used by menu items
 {
     for (MenuItem* item : items)
     {
@@ -12,12 +12,12 @@ Order::~Order()
     }
 }
 
-void Order::addItem(MenuItem* item)
+void Order::addItem(MenuItem* item) // Adds a menu item to the order
 {
     items.push_back(item);
 }
 
-void Order::displayOrder() const
+void Order::displayOrder() const // Displays every item in the order
 {
     cout << "\n----- Order -----\n";
 
@@ -30,7 +30,7 @@ void Order::displayOrder() const
     cout << "Order Total: $" << calculateTotal() << endl;
 }
 
-double Order::calculateTotal() const
+double Order::calculateTotal() const // Calculates the total cost of the order
 {
     double total = 0;
 

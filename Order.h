@@ -5,18 +5,19 @@
 
 using namespace std;
 
+// Represents a customer's order
 class Order
 {
 private:
-    vector<MenuItem*> items;
+    vector<MenuItem*> items;  // Stores all menu items in the order
 
 public:
-    Order();
+    Order(); // Default constructor
     ~Order();
 
-    void addItem(MenuItem* item);
+    void addItem(MenuItem* item); // Adds a menu item to the order
 
-    void displayOrder() const;
+    void displayOrder() const; // Displays the order
 
-    double calculateTotal() const;
+    double calculateTotal() const; // Calculates the total price
 };

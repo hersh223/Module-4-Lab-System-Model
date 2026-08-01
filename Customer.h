@@ -5,15 +5,16 @@
 
 using namespace std;
 
+// Represents a restaurant customer
 class Customer
 {
 private:
-    string customerName;
-    int customerID;
+    string customerName; // Customer's name
+    int customerID; // Customer ID number
 
 public:
-    Customer();
-    Customer(string name, int id);
+    Customer(); // Default constructor
+    Customer(string name, int id); // Creates a customer with a name and ID
 
-    void displayCustomer() const;
+    void displayCustomer() const; // Displays customer information
 };

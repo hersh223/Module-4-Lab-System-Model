@@ -1,5 +1,6 @@
 #include "MilkShake.h"
 
+// Constructor
 Milkshake::Milkshake(string itemName, double price, string flavor, string size)
     : MenuItem(itemName, price)
 {
@@ -7,7 +8,7 @@ Milkshake::Milkshake(string itemName, double price, string flavor, string size)
     this->size = size;
 }
 
-void Milkshake::displayItem() const
+void Milkshake::displayItem() const // Displays milkshake information
 {
     cout << "Milkshake: "
          << itemName
